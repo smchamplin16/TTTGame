@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', '-g', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ '.', null ]
+5 verbose cache add name=undefined spec="." args=[".",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: '.',
+6 verbose parsed url   path: '.',
+6 verbose parsed url   href: '.' }
+7 silly lockFile 3a52ce78- .
+8 verbose lock . /Users/smchamplin16/.npm/3a52ce78-.lock
+9 verbose tar pack [ '/Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz', '.' ]
+10 verbose tarball /Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+11 verbose folder .
+12 info prepublish UTTT@0.0.1
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /Users/smchamplin16/.npm/1f1177db-tar.lock
+15 silly lockFile 6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+16 verbose lock tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz /Users/smchamplin16/.npm/6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+20 silly lockFile 6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+21 silly lockFile 05efd3cb-hamplin16-npm-UTTT-0-0-1-package /Users/smchamplin16/.npm/UTTT/0.0.1/package
+22 verbose lock /Users/smchamplin16/.npm/UTTT/0.0.1/package /Users/smchamplin16/.npm/05efd3cb-hamplin16-npm-UTTT-0-0-1-package.lock
+23 silly lockFile 05efd3cb-hamplin16-npm-UTTT-0-0-1-package /Users/smchamplin16/.npm/UTTT/0.0.1/package
+24 silly lockFile 05efd3cb-hamplin16-npm-UTTT-0-0-1-package /Users/smchamplin16/.npm/UTTT/0.0.1/package
+25 silly lockFile 3a52ce78- .
+26 silly lockFile 3a52ce78- .
+27 silly resolved [ { name: 'UTTT',
+27 silly resolved     version: '0.0.1',
+27 silly resolved     description: 'A UTTT app (first trial)',
+27 silly resolved     main: 'index.js',
+27 silly resolved     dependencies:
+27 silly resolved      { express: '^4.10.2',
+27 silly resolved        'game-sample': '0.0.0',
+27 silly resolved        'node-uuid': '1.4.2' },
+27 silly resolved     devDependencies: {},
+27 silly resolved     scripts: { start: 'node index.js' },
+27 silly resolved     repository:
+27 silly resolved      { type: 'git',
+27 silly resolved        url: 'https://git.heroku.com/secret-river-3521.git' },
+27 silly resolved     keywords: [ 'UTTT' ],
+27 silly resolved     author: { name: 'Samira' },
+27 silly resolved     license: 'MIT',
+27 silly resolved     readme: 'December 2014\n\nAn Ultimate Tic Tac Toe game made for Intro to Computer Science final project\n',
+27 silly resolved     readmeFilename: 'README.md',
+27 silly resolved     gitHead: '6c16b39c165a3d30e446362a46e5238390443cb1',
+27 silly resolved     _id: 'UTTT@0.0.1',
+27 silly resolved     _shasum: 'c12f207edae31596983ae22c322503a628b20b08',
+27 silly resolved     _from: '.' } ]
+28 info install UTTT@0.0.1 into /usr/local/lib
+29 info installOne UTTT@0.0.1
+30 verbose lib/node_modules/UTTT unbuild
+31 verbose tar unpack /Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+32 silly lockFile 1bae0358--usr-local-lib-node-modules-UTTT tar:///usr/local/lib/node_modules/UTTT
+33 verbose lock tar:///usr/local/lib/node_modules/UTTT /Users/smchamplin16/.npm/1bae0358--usr-local-lib-node-modules-UTTT.lock
+34 silly lockFile 6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz
+35 verbose lock tar:///Users/smchamplin16/.npm/UTTT/0.0.1/package.tgz /Users/smchamplin16/.npm/6a5b2539-lin16-npm-UTTT-0-0-1-package-tgz.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 error Error: EACCES, mkdir '/usr/local/lib/node_modules/UTTT'
+37 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/UTTT']
+37 error   errno: 3,
+37 error   code: 'EACCES',
+37 error   path: '/usr/local/lib/node_modules/UTTT',
+37 error   fstream_type: 'Directory',
+37 error   fstream_path: '/usr/local/lib/node_modules/UTTT',
+37 error   fstream_class: 'DirWriter',
+37 error   fstream_stack:
+37 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+37 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+37 error      'Object.oncomplete (fs.js:107:15)' ] }
+38 error Please try running this command again as root/Administrator.
+39 error System Darwin 13.3.0
+40 error command "node" "/usr/local/bin/npm" "-g" "install"
+41 error cwd /Users/smchamplin16/Desktop/nodeScripts/UTTT
+42 error node -v v0.10.33
+43 error npm -v 1.4.28
+44 error path /usr/local/lib/node_modules/UTTT
+45 error fstream_path /usr/local/lib/node_modules/UTTT
+46 error fstream_type Directory
+47 error fstream_class DirWriter
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/UTTT'
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+51 error fstream_stack Object.oncomplete (fs.js:107:15)
+52 verbose exit [ 3, true ]

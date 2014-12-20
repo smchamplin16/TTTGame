@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> TEST </title>
+<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+</head>
+<body>
+  
+  <p> TEST </p>
+  <div id="tictactoe"></div>
+  <input type='text' id='rowInput' placeholder='Row'>
+  <input type='text' id='columnInput' placeholder='Column'>
+  
+  <script>
+    document.write("hello world");
+    var boardRef = new Firebase('https://uttt.firebaseio.com/');
+    
+    /*function enter() {
+      //var row = document.getElementById('rowInput').value;
+      var row = $('#rowInput').val();
+      //var column = $('#columnInput').val();
+      //document.writeln("DEBUGGED");
+      //alert("Go");
+      
+      //var rowIN = row.value;
+      alert(row);
+    };*/
+    
+    //var game = boardRef.child(game1);
+    //alert("game set");
+    
+    
+    
+    $('#columnInput').keypress(function(e){
+      if (e.keyCode == 13){
+        var rowIN = $('#rowInput').val();
+        var columnIN = $('#columnInput').val();
+        alert(rowIN);
+        
+        if (rowIN == "1"){
+          if (columnIN == "1"){
+            boardRef.push({column1: |  X |})
+            //boardRef.child(game).child(row1).child(column1).set({"column1": "|  X |" });
+            
+            alert("1 in");
+          }
+        }
+      }
+      
+    });
+    
+    
+    boardRef.on('child_changed', function(snapshot) {
+        var boardShot = snapshot.val();
+        displayBoard(boardShot.column1, boardShot.column2, boardShot.column3);
+        //var message = snapshot.val();
+        //displayBoard(message.name, message.text);
+    };
+          
+         /* 
+          var row1 = boardRef.child(row1);
+          var row2 = boardRef.child(row2);
+          var row3 = boardRef.child(row3);
+          
+          if (row == "1"){
+            if (column == "1"){
+              row1.child(column1).set({"column1": "|  X |" });
+            } else if (column == "2"){
+              row1.child(column2).set({"column1": "|  X |" });
+            } else {
+              row1.child(column3).set({"column1": "|  X |" });
+            }
+          }
+          
+        }}
+          
+          if (row == "2"){
+            if (column == "1"){
+              row2.child(column1).set({"column1": "|  X |" });
+            } else if (column == "2"){
+              row2.child(column2).set({"column1": "|  X |" });
+            } else {
+              row2.child(column3).set({"column1": "|  X |" });
+            }
+          }
+          
+          
+          if (row == "3"){
+            if (column == "1"){
+              row3.child(column1).set({"column1": "|  X |" });
+            } else if (column == "2"){
+              row3.child(column2).set({"column1": "|  X |" });
+            } else {
+              row3.child(column3).set({"column1": "|  X |" });
+            }
+          }
+      }    
+    }
+          boardRef.push({name: name, text: text});
+          $('#row').val('');
+          $('#column').val('');
+        }
+        
+        
+      boardRef.on('child_changed', function(snapshot) {
+        var boardShot = snapshot.val();
+        displayBoard(boardShot.column1, boardShot.column2, boardShot.column3);
+        //var message = snapshot.val();
+        //displayBoard(message.name, message.text);
+      });
+      function displayBoard(column1, column2, column3) {
+        $('<div/>').text(row1.child(column1))
+        //$('<div/>').text(text).prepend($('<em/>').text(row));
+        //$('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
+        //$('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+      };
+    }*/
+  
+  </script>
+
+</body>
+
+</html>
